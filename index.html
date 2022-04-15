@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Log In / Sign Up</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="./main.css">
+</head>
+<body class="homebody">
+
+<!--Login Page-->
+
+   <div class="container">
+     <form class="form" id="login" onsubmit="signIn(event)" autocomplete="off" >
+       <h2 class="form-title">Login</h2>
+         <div class="input-group">
+           <input type="text" class="form-input" id="loginuserName" autofocus placeholder="Username" />
+           <input type="password" class="form-input" id="loginPwd" placeholder="Password" />
+         </div>
+         <button class="form-button" type="submit">Login</button>
+        <!--Seperate div to display login error message-->
+         <div class="alert" id="invalidLoginAlert">  
+           Invalid Login Credentials
+         </div>
+       <p class="accountCreation"> <a href="#" class="form-link" id="linkCreateAccount">Don't have an account? Create account</a></p>  
+     </form>
+
+
+<!--SignUp Page-->
+
+    <form class="form form-hidden" id="createAccount">
+      <h2 class="form-title">Create Account</h2>
+      <div class="input-group">
+        <input type="text" class="form-input" id="userName" autofocus placeholder="Username" required />
+        <input type="text" class="form-input" id="firstName"  placeholder="First Name" required />
+        <input type="text" class="form-input" id="lastName" placeholder="Last Name" required />
+        <input type="email" class="form-input" id="email" placeholder="Email Address" required/>
+        <input type="password" class="form-input" id="pwd" placeholder="Password" required/>
+      </div>
+      <button class="form-button" type="submit" onclick="signUp()">Create Account</button>
+      <p class="accountCreation"> <a href="#" class="form-link" id="linkLogin">Already have an account? Sign in</a></p>
+    </form>
+  </div>
+
+ <script src="./main.js"></script>
+</body>
+</html>

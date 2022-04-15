@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Home Page</title>
+ <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+  </ul>
+  <div class="container-full">
+    <table id="userTable">
+      <caption id="table-caption"></caption> 
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      
+    </table>
+    <div class="btn-group" id="pagination-buttons"></div>
+
+    <button id="createUser">Create User</button>
+  </div> 
+
+  
+
+<!--Create user Interface Template-->
+
+<div id="createFormModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="createFormClose">&times;</span> <!--Using HTML entity reference for x symbol-->
+    <div>
+      <h3>Create User</h3>
+      <p>Name:</p>
+      <input id="createName" value="" placeholder="Enter Name">
+      <p>Job:</p>
+      <input id="createJob" value="" placeholder="Enter Job">
+      <br/>
+      <br/>
+      <button id="createConfirm">Submit</button>
+    </div>
+  </div>
+</div>
+
+<!--Edit user Interface Template-->
+
+<div id="editFormModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="editFormClose">&times;</span> <!--Using HTML entity reference for x symbol-->
+    <div>
+      <h3>Edit User</h3>
+      <p>Name:</p>
+      <input id="editName" value="" placeholder="Enter Name">
+      <p>Job:</p>
+      <input id="editJob" value="" placeholder="Enter Job">
+      <br/>
+      <br/>
+      <button id="editConfirm">Submit</button>
+    </div>
+  </div>
+</div>
+
+<!--Delete user Interface Template-->
+
+<div id="deleteFormModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="deleteFormClose">&times;</span> <!--Using HTML entity reference for x symbol-->
+    <div id="deleteButtonCaption"></div>
+    <button id="deleteConfirm">Delete</button>
+  </div>
+</div>
+
+<!--View user Interface Template-->
+
+<div id="viewUserModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="viewUserClose">&times;</span> <!--Using HTML entity reference for x symbol-->
+    <div>
+      <img src="https://reqres.in/img/faces/1-image.jpg" id="userImage">
+      <h3 id="userTitle">Test Boi</h3>
+      <p id="userEmail">noobboi@noob.com</p>
+    </div>
+  </div>
+</div>
+
+  <script src="./main.js" ></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+{
+ "data":[
+  {
+    "id": 1,
+    "username": "Abinesh97",
+    "fname": "Abinesh",
+    "lname": "Bachan",
+    "email": "abineshb@gmail.com",
+    "pwd": "abibachan22"
+  },
+  
+  {
+    "id": 2,
+    "username": "Bhuvanesh_N",
+    "fname": "Bhuvanesh",
+    "lname": "Nachiappan",
+    "email": "bhuvin@gmail.com",
+    "pwd": "bhuvin@20"
+  },
+
+  {
+    "id": 3,
+    "username": "Michael$22",
+    "fname": "Michael",
+    "lname": "Lawson",
+    "email": "michael.lawson@gmail.com",
+    "pwd": "michLawsen@97"
+  },
+
+  {
+    "id": 4,
+    "username": "LindyF94",
+    "fname": "Lindsay",
+    "lname": "Ferguson",
+    "email": "lindsay.ferguson@gmail.com",
+    "pwd": "Lindyfer@94"
+  },
+
+  {
+    "id": 5,
+    "username": "NOTtheTobias",
+    "fname": "Tobias",
+    "lname": "Funke",
+    "email": "tobias.funke@gmail.com",
+    "pwd": "TobyStark@08"
+  }
+ ]
+}
